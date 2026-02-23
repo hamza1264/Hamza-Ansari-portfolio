@@ -59,8 +59,14 @@ function cssCertificate() {
 }
 
 function javascriptCertificate() {
-    window.open("image/javascript cartificate.jpg", "_blank");
+    window.open("image/javascript cartificate 01.jpg", "_blank");
 }
+
+function javascriptCertificate() {
+    window.open("image/javascript cartificate 02.jpg", "_blank");
+}
+
+
 
 var certificates = document.getElementsByClassName("certificate-card")
 for (var i = 0; i < certificates.length; i++) {
