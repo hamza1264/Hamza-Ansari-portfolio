@@ -58,11 +58,11 @@ function cssCertificate() {
     window.open("image/css cartificate.jpg", "_blank");
 }
 
-function javascriptCertificate() {
+function javascriptCertificate01() {
     window.open("image/javascript cartificate 01.jpg", "_blank");
 }
 
-function javascriptCertificate() {
+function javascriptCertificate02() {
     window.open("image/javascript cartificate 02.jpg", "_blank");
 }
 
