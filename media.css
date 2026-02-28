@@ -1,38 +1,297 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ================= NAVBAR ================= */
+
+@media (max-width: 991px) {
+    #logo {
+        font-size: 26px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
 }
 
-body {
-    overflow-x: hidden;
+/* ================= HERO SECTION ================= */
+
+@media (max-width: 1200px) {
+    #hero-section {
+        height: auto;
+        text-align: center;
+    }
+
+    #main-text,
+    #main-image {
+        display: block;
+        margin: 0px auto;
+    }
+
+    #main-image {
+        max-width: 400px;
+    }
+
+    #social-icons {
+        max-width: 250px;
+        height: 50px;
+        /* border: 2px solid black; */
+        margin: 20px auto;
+        font-size: 35px;
+    }
 }
 
+@media (max-width: 768px) {
+    #hero-section {
+        margin-top: 120px;
+    }
+
+    #main-text h1 {
+        font-size: 30px;
+    }
+
+    #main-text h2 {
+        font-size: 20px;
+    }
+
+    #hero-section div p {
+        font-size: 16px;
+    }
+
+    #hero-section div button {
+        width: 100%;
+        max-width: 120px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-text h1 {
+        font-size: 24px;
+    }
+
+    #hero-section div p {
+        font-size: 14px;
+    }
+
+    #social-icons {
+        max-width: 250px;
+        height: 50px;
+        /* border: 2px solid black; */
+        margin: 20px auto;
+        font-size: 35px;
+    }
+}
+
+/* ================= ABOUT SECTION ================= */
+
+@media (max-width: 1200px) {
+    #about-section {
+        height: auto;
+    }
+
+    #text,
+    #education {
+        display: block;
+        width: 90%;
+        height: 100%;
+        margin: 20px auto;
+
+    }
+}
+
+@media (max-width: 768px) {
+    #about-section div h2 {
+        font-size: 30px;
+    }
+
+    #text h3,
+    #education h3 {
+        font-size: 24px;
+    }
+
+    #text p,
+    #education p {
+        font-size: 16px;
+    }
+}
+
+/* ================= SKILLS SECTION ================= */
+
+@media (max-width: 1200px) {
+    #skills-section {
+        height: auto;
+    }
+
+    #skills-section div h2 {
+        font-size: 30px;
+    }
 
 
-/* section 01 start */
+    #logo-contaner {
+        height: auto;
+    }
+}
 
+@media (max-width: 768px) {
+    .skill-card {
+        width: 120px;
+        height: 170px;
+        margin: 15px;
+    }
 
+    .skill-card img {
+        width: 70px;
+    }
+}
 
+@media (max-width: 480px) {
+    .skill-card {
+        width: 100px;
+        height: 150px;
+    }
 
-/* section 01 end */
-/* section 02 start */
+    .skill-card img {
+        width: 60px;
+    }
+}
 
-/* section 02 end */
-    
-/* section 03 start */
-/* section 03 end */
+/* ================= PROJECT SECTION ================= */
 
+@media (max-width: 1200px) {
+    #project-section {
+        width: 95%;
+        height: auto;
+    }
 
-/* section 04 start */
-/* section 04 end */
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-/* section 05 start */
-/* section 05 end */
+    .project-card {
+        width: 90%;
+        height: auto;
+        margin: 5px auto;
+    }
 
-/* section 06 start */
-/* section 06 end */
+    .project-image img {
+        width: 100%;
+        height: auto;
+    }
+}
 
+@media (max-width: 768px) {
+    #project-section h2 {
+        font-size: 28px;
+    }
 
-/* footer start */
-/* footer end */
+    .project-card h3 {
+        font-size: 18px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+    }
+}
+
+/* ================= CERTIFICATE SECTION ================= */
+
+@media (max-width: 1200px) {
+    #Certificates-section {
+        width: 95%;
+        height: auto;
+    }
+
+    .certificate-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .certificate-card {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .certificate-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #Certificates-section h2 {
+        font-size: 28px;
+    }
+
+    .certificate-card p {
+        font-size: 14px;
+    }
+}
+
+/* ================= CONTACT SECTION ================= */
+
+@media (max-width: 1200px) {
+    #contact-section {
+        width: 95%;
+        height: auto;
+    }
+
+    .contact-container,
+    #contect-information {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact-section h2 {
+        font-size: 28px;
+    }
+
+    .contact-container button {
+        width: 100%;
+    }
+
+    #contect-information {
+        height: auto;
+    }
+
+    .social-links {
+        margin: 15px 15px;
+        /* border: 2px solid black; */
+    }
+
+    .social-links a {
+        margin: 5px 0px 15px 25px;
+    }
+}
+
+/* ================= FOOTER ================= */
+
+@media (max-width: 768px) {
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-top: 15px;
+    }
+
+    .footer-nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}

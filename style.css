@@ -1,4 +1,5 @@
 @import url('media.css');
+
 body {
   margin: 0;
   padding: 0;
@@ -16,15 +17,15 @@ body {
   font-family: "fantasy";
 }
 
-  @media (max-width: 991px) {
-    #logo {
-      font-size: 28px;
-    }
+@media (max-width: 991px) {
+  #logo {
+    font-size: 28px;
   }
+}
 
-  .fa-solid fa-bars i {
-    font-size: 24px;
-  }
+.fa-solid fa-bars i {
+  font-size: 24px;
+}
 
 /* navbar end  */
 
@@ -265,7 +266,9 @@ div h1 span {
 /* section 04 start  */
 
 #project-section {
-  width: 1600px;
+  width: 95%;
+  max-width: 1600px;
+  /* width: 1600px; */
   height: 1150px;
   /* border: 2px solid black; */
   margin: 50px auto;
@@ -292,44 +295,58 @@ div h1 span {
   margin: auto;
 }
 
+#project-section {
+  width: 95%;
+  max-width: 1400px;
+  margin: 60px auto;
+  height: auto;
+  /* important */
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
 .project-card {
-  width: 690px;
-  height: 500px;
-  /* border: 2px solid black; */
-  display: inline-block;
-  margin: 20px 0px 20px 70px;
-  vertical-align: top;
+  flex: 1 1 600px;
+  /* responsive width */
+  max-width: 650px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  /* overflow fix */
+  cursor: pointer;
+  transition: 0.3s ease;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
 }
 
 .project-image {
-  width: 690px;
-  height: 3;
-  /* border: 2px solid black; */
-  display: inline-block;
-  margin: 10px 0px 10px 0px;
-  vertical-align: top;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .project-card h3 {
-  /* border: 2px solid black; */
-  color: #0D5EBA;
-  text-transform: capitalize;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 5px 0px 5px 10px;
-  text-align: start;
-  /* line-height: 2; */
+  padding: 15px;
+  font-size: 22px;
 }
 
 .project-card p {
-  /* border: 2px solid black; */
-  text-transform: capitalize;
-  font-weight: bold;
-  margin: 0px 0px 0px 10px;
-  line-height: 1.5;
-  /* font-size: 16px; */
+  padding: 0 15px 20px 15px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* section 04 end  */
@@ -579,11 +596,6 @@ div h1 span {
 .social-icons a:hover {
   color: #ffffff;
 }
+
 /* footer end */
 
-
-    @media (max-width: 991px) {
-      #logo {
-        font-size: 28px;
-      }
-    }
